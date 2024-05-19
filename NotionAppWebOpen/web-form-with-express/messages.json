@@ -9,7 +9,7 @@
   },
   {
     "role": "assistant",
-    "content": "Proyecto Matemático: Suma de 2 + 2"
+    "content": "Proyecto \"Operación Matemática\""
   },
   {
     "role": "user",
@@ -25,7 +25,7 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 1: Reunir materiales"
+    "content": "Tarea 1: Investigar métodos de suma."
   },
   {
     "role": "user",
@@ -33,7 +33,7 @@
   },
   {
     "role": "assistant",
-    "content": "**Pasos para llevar a cabo la Tarea 1: \"Reunir materiales\"**\n\n1. Hacer una lista detallada de los materiales necesarios para el proyecto.\n2. Verificar la disponibilidad de los materiales en existencia.\n3. Comprar o adquirir los materiales que falten en caso de ser necesario.\n4. Organizar y clasificar los materiales de acuerdo a su uso.\n5. Preparar el espacio de trabajo para tener a mano todos los materiales necesarios."
+    "content": "1. Investiga diferentes métodos de suma utilizados en matemáticas, como la suma manual, la suma en columnas, la suma usando calculadoras, entre otros.\n2. Compara la efectividad y eficiencia de cada método, teniendo en cuenta la precisión, rapidez y facilidad de uso.\n3. Selecciona el método de suma más adecuado para el propósito del proyecto y asegúrate de comprender completamente cómo aplicarlo en diversas situaciones."
   },
   {
     "role": "user",
@@ -49,7 +49,7 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 2: Crear esquema"
+    "content": "Tarea 2: Crear presentación."
   },
   {
     "role": "user",
@@ -57,7 +57,7 @@
   },
   {
     "role": "assistant",
-    "content": "**Pasos para la Tarea 2: \"Crear esquema\"**\n\n1. Identificar los elementos clave que deben incluirse en el esquema.\n2. Decidir la estructura y el formato del esquema a utilizar.\n3. Organizar la información de manera jerárquica y lógica.\n4. Incluir títulos, subtítulos y viñetas para facilitar la comprensión.\n5. Revisar y ajustar el esquema según sea necesario."
+    "content": "1. Diseñar la estructura de la presentación, definiendo la introducción, el desarrollo y la conclusión.\n2. Elaborar diapositivas claras y concisas que incluyan ejemplos de sumas utilizando el método seleccionado en la primera tarea.\n3. Revisar y ajustar el contenido de la presentación para asegurar que sea coherente, informativo y visualmente atractivo."
   },
   {
     "role": "user",
@@ -73,7 +73,7 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 3: Presentación"
+    "content": "Tarea 3: Informe final."
   },
   {
     "role": "user",
@@ -81,7 +81,7 @@
   },
   {
     "role": "assistant",
-    "content": "**Pasos para la Tarea 3: \"Presentación\"**\n\n1. Preparar el contenido que se incluirá en la presentación.\n2. Diseñar diapositivas claras y atractivas que respalden la información.\n3. Practicar la presentación para asegurar una comunicación efectiva.\n4. Revisar la presentación en busca de errores o áreas de mejora.\n5. Realizar la presentación ante el público o el equipo designado."
+    "content": "1. Resumir los resultados obtenidos durante la investigación de métodos de suma y la creación de la presentación.\n2. Detallar las conclusiones sobre la eficacia de los métodos de suma y su aplicación en diferentes situaciones.\n3. Presentar el informe final de manera clara y organizada, destacando los puntos clave y recomendaciones para futuros proyectos similares."
   },
   {
     "role": "user",
@@ -89,6 +89,6 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-25"
+    "content": "2024-05-26"
   }
 ]

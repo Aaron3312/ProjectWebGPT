@@ -169,14 +169,8 @@ appendApiResponseToCronosUI = function (data) {
 	//esto es para agregar la respuesta de la api a la interfaz de usuario de Cronos
 	// Append project details to Cronos UI
 	// Crear contenedor principal
-	const container = document.createElement("div");
-	container.style.width = "50%";
-	container.style.border = "1px solid #ccc";
-	container.style.padding = "20px";
-	container.style.margin = "20px";
-	container.style.borderRadius = "10px";
-	container.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
-	container.style.marginTop = "4rem";
+
+	const container = document.getElementById("content-container");
 
 	// Crear título
 	const title = document.createElement("h2");
@@ -230,9 +224,61 @@ appendApiResponseToCronosUI = function (data) {
 
 	addIntercalatedElements(data.Steps, data.dateOfSteps, data.StepsInsideResume);
 
-	// Agregar el contenedor principal al cuerpo del documento
-	document.body.appendChild(container);
+	// Inicializar FullCalendar y añadir eventos
+	
+	const calendarEl = document.getElementById("calendar");
+		// necesitamos hacerlo un poco a la izq el calendario
+		//calendarEl.style.marginLeft = "-1rem";
+	const calendar = new FullCalendar.Calendar(calendarEl, {
+		initialView: "dayGridMonth",
+		events: data.dateOfSteps.map((date, index) => ({
+			title: data.Steps[index],
+			start: date,
+			description: data.StepsInsideResume[index],
+		})),
+		headerToolbar: {
+			left: 'prev,next today',
+			center: 'title',
+			right: 'dayGridMonth,timeGridWeek,timeGridDay'
+		},
+		eventClick: function(info) {
+			alert('Event: ' + info.event.title + '\nDescription: ' + info.event.extendedProps.description);
+		},
+		dateClick: function(info) {
+			alert('Date: ' + info.dateStr);
+		},
+		editable: true,
+		selectable: true,
+		select: function(info) {
+			alert('Selected: ' + info.startStr + ' to ' + info.endStr);
+		},
+		eventDrop: function(info) {
+			alert('Event dropped to ' + info.event.start.toISOString());
+		},
+		eventResize: function(info) {
+			alert('Event resized to ' + info.event.end.toISOString());
+		},
+		eventMouseEnter: function(info) {
+			info.el.style.backgroundColor = 'lightblue';
+		},
+		eventMouseLeave: function(info) {
+			info.el.style.backgroundColor = '';
+		},
+		eventRender: function(info) {
+			var tooltip = new Tooltip(info.el, {
+				title: info.event.extendedProps.description,
+				placement: 'top',
+				trigger: 'hover',
+				container: 'body'
+			});
+		}
+	});
+	
+	calendar.render();
+	
 };
+
+// Agregar el contenedor principal al cuerpo del documento
 
 // Llamar a la función con los datos de ejemplo
 

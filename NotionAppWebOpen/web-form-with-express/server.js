@@ -7,7 +7,7 @@ const cors = require("cors");
 const port = 443;
 const fs = require("fs/promises"); // Import fs/promises para manejar archivos de forma asíncrona
 const model1 = "gpt-3.5-turbo"; //modelo de openai a utilizar
-
+const fullCalendar = require('fullcalendar');
 
 //manejo de la hora y fecha
 const { DateTime } = require("luxon");
