@@ -9,7 +9,7 @@
   },
   {
     "role": "assistant",
-    "content": "Proyecto \"Operación Cuatro\""
+    "content": "Proyecto Matemático: Suma de 2 + 2"
   },
   {
     "role": "user",
@@ -25,7 +25,7 @@
   },
   {
     "role": "assistant",
-    "content": "Investigación preliminar"
+    "content": "Tarea 1: Reunir materiales"
   },
   {
     "role": "user",
@@ -33,7 +33,7 @@
   },
   {
     "role": "assistant",
-    "content": "1. Definir el alcance de la investigación preliminar.\n2. Recopilar información relevante sobre el proyecto.\n3. Analizar y sintetizar los datos recopilados.\n4. Elaborar un informe con los hallazgos y conclusiones de la investigación preliminar.\n5. Presentar el informe a los interesados y obtener retroalimentación."
+    "content": "**Pasos para llevar a cabo la Tarea 1: \"Reunir materiales\"**\n\n1. Hacer una lista detallada de los materiales necesarios para el proyecto.\n2. Verificar la disponibilidad de los materiales en existencia.\n3. Comprar o adquirir los materiales que falten en caso de ser necesario.\n4. Organizar y clasificar los materiales de acuerdo a su uso.\n5. Preparar el espacio de trabajo para tener a mano todos los materiales necesarios."
   },
   {
     "role": "user",
@@ -49,7 +49,7 @@
   },
   {
     "role": "assistant",
-    "content": "Análisis de datos"
+    "content": "Tarea 2: Crear esquema"
   },
   {
     "role": "user",
@@ -57,7 +57,7 @@
   },
   {
     "role": "assistant",
-    "content": "1. Recolectar los datos necesarios para el análisis.\n2. Organizar y estructurar los datos de manera adecuada.\n3. Aplicar técnicas de análisis estadístico.\n4. Interpretar los resultados obtenidos.\n5. Elaborar un informe con las conclusiones del análisis de datos."
+    "content": "**Pasos para la Tarea 2: \"Crear esquema\"**\n\n1. Identificar los elementos clave que deben incluirse en el esquema.\n2. Decidir la estructura y el formato del esquema a utilizar.\n3. Organizar la información de manera jerárquica y lógica.\n4. Incluir títulos, subtítulos y viñetas para facilitar la comprensión.\n5. Revisar y ajustar el esquema según sea necesario."
   },
   {
     "role": "user",
@@ -73,7 +73,7 @@
   },
   {
     "role": "assistant",
-    "content": "Presentación de resultados"
+    "content": "Tarea 3: Presentación"
   },
   {
     "role": "user",
@@ -81,7 +81,7 @@
   },
   {
     "role": "assistant",
-    "content": "1. Preparar una visualización clara y efectiva de los resultados.\n2. Preparar una presentación oral para compartir los resultados.\n3. Revisar y practicar la presentación.\n4. Realizar la presentación ante los interesados.\n5. Responder preguntas y recopilar comentarios."
+    "content": "**Pasos para la Tarea 3: \"Presentación\"**\n\n1. Preparar el contenido que se incluirá en la presentación.\n2. Diseñar diapositivas claras y atractivas que respalden la información.\n3. Practicar la presentación para asegurar una comunicación efectiva.\n4. Revisar la presentación en busca de errores o áreas de mejora.\n5. Realizar la presentación ante el público o el equipo designado."
   },
   {
     "role": "user",
@@ -89,6 +89,6 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-24"
+    "content": "2024-05-25"
   }
 ]

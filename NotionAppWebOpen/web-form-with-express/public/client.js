@@ -170,6 +170,7 @@ appendApiResponseToCronosUI = function (data) {
 	// Append project details to Cronos UI
 	// Crear contenedor principal
 	const container = document.createElement("div");
+	container.style.width = "50%";
 	container.style.border = "1px solid #ccc";
 	container.style.padding = "20px";
 	container.style.margin = "20px";
@@ -177,61 +178,61 @@ appendApiResponseToCronosUI = function (data) {
 	container.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
 	container.style.marginTop = "4rem";
 
-// Crear título
-const title = document.createElement('h2');
-title.textContent = 'Detalles de la Base de Datos';
-title.style.textAlign = 'center';
-container.appendChild(title);
+	// Crear título
+	const title = document.createElement("h2");
+	title.textContent = "Detalles de la Base de Datos";
+	title.style.textAlign = "center";
+	container.appendChild(title);
 
-// Agregar nombre de la base de datos y número de tareas
-function addSingleElement(label, item) {
-	const singleContainer = document.createElement('div');
-	singleContainer.style.marginBottom = '20px';
-	
-	const singleTitle = document.createElement('h3');
-	singleTitle.textContent = label;
-	singleContainer.appendChild(singleTitle);
-	
-	const singleItem = document.createElement('p');
-	singleItem.textContent = item;
-	singleContainer.appendChild(singleItem);
-	container.appendChild(singleContainer);
-}
+	// Agregar nombre de la base de datos y número de tareas
+	function addSingleElement(label, item) {
+		const singleContainer = document.createElement("div");
+		singleContainer.style.marginBottom = "20px";
 
-addSingleElement('Nombre de la Base de Datos', data.DatabaseName[0]);
-addSingleElement('Número de Tareas', data.NumberOfTasks[0]);
+		const singleTitle = document.createElement("h3");
+		singleTitle.textContent = label;
+		singleContainer.appendChild(singleTitle);
 
-// Agregar pasos, fechas y resúmenes intercalados
-function addIntercalatedElements(steps, dates, summaries) {
-	for (let i = 0; i < steps.length; i++) {
-		const stepContainer = document.createElement('div');
-		stepContainer.style.marginBottom = '20px';
-		
-		const stepTitle = document.createElement('h3');
-		stepTitle.textContent = `Paso ${i + 1}`;
-		stepContainer.appendChild(stepTitle);
-		
-		const stepItem = document.createElement('p');
-		stepItem.textContent = `Paso: ${steps[i]}`;
-		stepContainer.appendChild(stepItem);
-		
-		const dateItem = document.createElement('p');
-		dateItem.textContent = `Fecha: ${dates[i]}`;
-		stepContainer.appendChild(dateItem);
-		
-		const summaryItem = document.createElement('p');
-		summaryItem.textContent = `Resumen: ${summaries[i]}`;
-		stepContainer.appendChild(summaryItem);
-		
-		container.appendChild(stepContainer);
+		const singleItem = document.createElement("p");
+		singleItem.textContent = item;
+		singleContainer.appendChild(singleItem);
+		container.appendChild(singleContainer);
 	}
-}
 
-addIntercalatedElements(data.Steps, data.dateOfSteps, data.StepsInsideResume);
+	addSingleElement("Nombre de la Base de Datos", data.DatabaseName[0]);
+	addSingleElement("Número de Tareas", data.NumberOfTasks[0]);
 
-// Agregar el contenedor principal al cuerpo del documento
-document.body.appendChild(container);
-}
+	// Agregar pasos, fechas y resúmenes intercalados
+	function addIntercalatedElements(steps, dates, summaries) {
+		for (let i = 0; i < steps.length; i++) {
+			const stepContainer = document.createElement("div");
+			stepContainer.style.marginBottom = "20px";
+
+			const stepTitle = document.createElement("h3");
+			stepTitle.textContent = `Paso ${i + 1}`;
+			stepContainer.appendChild(stepTitle);
+
+			const stepItem = document.createElement("p");
+			stepItem.textContent = `Paso: ${steps[i]}`;
+			stepContainer.appendChild(stepItem);
+
+			const dateItem = document.createElement("p");
+			dateItem.textContent = `Fecha: ${dates[i]}`;
+			stepContainer.appendChild(dateItem);
+
+			const summaryItem = document.createElement("p");
+			summaryItem.textContent = `Resumen: ${summaries[i]}`;
+			stepContainer.appendChild(summaryItem);
+
+			container.appendChild(stepContainer);
+		}
+	}
+
+	addIntercalatedElements(data.Steps, data.dateOfSteps, data.StepsInsideResume);
+
+	// Agregar el contenedor principal al cuerpo del documento
+	document.body.appendChild(container);
+};
 
 // Llamar a la función con los datos de ejemplo
 
