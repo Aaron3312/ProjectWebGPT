@@ -26,10 +26,12 @@ const commentResponseEl = document.getElementById("commentResponse");
 
 //$("html").css("background-color", "black");
 $(".menuhide").click(function () {
+	//esto lo hice para que se esconda el menu de arriba
 	$(".upperPart").slideToggle();
 });
 // Appends the API response to the UI
 const appendApiResponse = function (apiResponse, el) {
+	//esto significa que vamos a agregar la respuesta de la api a la interfaz de usuario
 	console.log(apiResponse);
 
 	// Add success message to UI
@@ -52,6 +54,7 @@ const appendApiResponse = function (apiResponse, el) {
 	//   el.appendChild(newAnchorTag)
 	// }
 	if (apiResponse.data.url) {
+		//esto es para que se cree un link en la interfaz de usuario
 		const newAnchorTag = document.createElement("a");
 		idurlOfNotionItem = apiResponse.data.id.replace(/-/g, "");
 		urlofNotionItem = "http://aaronproject1.notion.site/" + idurlOfNotionItem;
@@ -59,17 +62,17 @@ const appendApiResponse = function (apiResponse, el) {
 		newAnchorTag.innerText = urlofNotionItem;
 		el.appendChild(newAnchorTag);
 		//volvemos todo a la normalidad
-    $("#dbSubmit").css("background-color", "#ffed84");
-    $("#dbSubmit").prop("disabled", false);
+		$("#dbSubmit").css("background-color", "#ffed84");
+		$("#dbSubmit").prop("disabled", false);
 		if (window.innerWidth > 1200 && $(".upperPart").hasClass("minimize")) {
 			$(".upperPart").toggleClass("minimize");
-			$("table").animate({"margin-top": "-0.1rem"});
+			$("table").animate({ "margin-top": "-0.1rem" });
 			$(".menuhide").show();
 		}
 	}
 };
 
-// Appends the blocks API response to the UI
+// Appends the blocks API response to the UI esto significa que vamos a agregar la respuesta de los bloques a la interfaz de usuario
 const appendBlocksResponse = function (apiResponse, el) {
 	console.log(apiResponse);
 
@@ -111,12 +114,13 @@ const appendBlocksResponse = function (apiResponse, el) {
 document.addEventListener("DOMContentLoaded", function () {});
 
 dbForm.onsubmit = async function (event) {
+	//esta funcion creo que es la que sobre cargue con todo lo que hice
 	event.preventDefault();
 	const name = event.target.dbName.value;
 	const body = JSON.stringify({ dbName });
 	console.log("que carajo?");
 	const newAnchorTag1 = document.createElement("a");
-	
+
 	//cambiamos el color del type submit
 	$("#dbSubmit").css("background-color", "red");
 	//hacemos inservible el boton
@@ -129,7 +133,6 @@ dbForm.onsubmit = async function (event) {
 		//$(".upperPart").toggleClass("minimize");
 		//subimos un poco la tabla de abajo cambiando el margen-top -4rem
 		//$("table").animate({"margin-top": "-10rem"});
-
 	}
 
 	newAnchorTag1.innerText = "CARGANDO!!!!";
@@ -146,66 +149,149 @@ dbForm.onsubmit = async function (event) {
 	});
 	const newDBData = await newDBResponse.json();
 
-	appendApiResponse(newDBData, dbResponseEl);
+	//projectDetails have this things inside:DatabaseName: [],NumberOfTasks: [],Steps: [],dateOfSteps: [],completionOfSteps: [],StepsInsideResume: []
+
+	console.log("this is the response of the api: ");
+	console.log(newDBData.projectDetails);
+	//console.log(newDBData.projectDetails.DatabaseName)
+	//mostramos el nombre de la tarea step 2
+	//recuerda Step con mayuscula
+	console.log(newDBData.projectDetails.Steps[1]);
+
+	appendApiResponse(newDBData, dbResponseEl); //esto agregara la respuesta de la api a la interfaz de usuario usa como parametros la respuesta de la api y el elemento donde se va a agregar
+	appendApiResponseToCronosUI(newDBData.projectDetails);
 	dbResponseEl.removeChild(newAnchorTag1);
 };
 
-pageForm.onsubmit = async function (event) {
-	event.preventDefault();
+//############################################################################################################
+//hacemos una funcion para agregar la respuesta de la api a la interfaz de usuario de Cronos
+appendApiResponseToCronosUI = function (data) {
+	//esto es para agregar la respuesta de la api a la interfaz de usuario de Cronos
+	// Append project details to Cronos UI
+	// Crear contenedor principal
+	const container = document.createElement("div");
+	container.style.border = "1px solid #ccc";
+	container.style.padding = "20px";
+	container.style.margin = "20px";
+	container.style.borderRadius = "10px";
+	container.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
+	container.style.marginTop = "4rem";
 
-	const dbID = event.target.newPageDB.value;
-	const pageName = event.target.newPageName.value;
-	const header = event.target.header.value;
-	const body = JSON.stringify({ dbID, pageName, header });
-	//  const dueDate = event.target.dueDate.value
+// Crear título
+const title = document.createElement('h2');
+title.textContent = 'Detalles de la Base de Datos';
+title.style.textAlign = 'center';
+container.appendChild(title);
 
-	const newPageResponse = await fetch("/pages", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body,
-	});
+// Agregar nombre de la base de datos y número de tareas
+function addSingleElement(label, item) {
+	const singleContainer = document.createElement('div');
+	singleContainer.style.marginBottom = '20px';
+	
+	const singleTitle = document.createElement('h3');
+	singleTitle.textContent = label;
+	singleContainer.appendChild(singleTitle);
+	
+	const singleItem = document.createElement('p');
+	singleItem.textContent = item;
+	singleContainer.appendChild(singleItem);
+	container.appendChild(singleContainer);
+}
 
-	const newPageData = await newPageResponse.json();
-	appendApiResponse(newPageData, pageResponseEl);
-};
+addSingleElement('Nombre de la Base de Datos', data.DatabaseName[0]);
+addSingleElement('Número de Tareas', data.NumberOfTasks[0]);
 
-blocksForm.onsubmit = async function (event) {
-	event.preventDefault();
+// Agregar pasos, fechas y resúmenes intercalados
+function addIntercalatedElements(steps, dates, summaries) {
+	for (let i = 0; i < steps.length; i++) {
+		const stepContainer = document.createElement('div');
+		stepContainer.style.marginBottom = '20px';
+		
+		const stepTitle = document.createElement('h3');
+		stepTitle.textContent = `Paso ${i + 1}`;
+		stepContainer.appendChild(stepTitle);
+		
+		const stepItem = document.createElement('p');
+		stepItem.textContent = `Paso: ${steps[i]}`;
+		stepContainer.appendChild(stepItem);
+		
+		const dateItem = document.createElement('p');
+		dateItem.textContent = `Fecha: ${dates[i]}`;
+		stepContainer.appendChild(dateItem);
+		
+		const summaryItem = document.createElement('p');
+		summaryItem.textContent = `Resumen: ${summaries[i]}`;
+		stepContainer.appendChild(summaryItem);
+		
+		container.appendChild(stepContainer);
+	}
+}
 
-	const pageID = event.target.pageID.value;
-	const content = event.target.content.value;
-	const body = JSON.stringify({ pageID, content });
+addIntercalatedElements(data.Steps, data.dateOfSteps, data.StepsInsideResume);
 
-	const newBlockResponse = await fetch("/blocks", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body,
-	});
+// Agregar el contenedor principal al cuerpo del documento
+document.body.appendChild(container);
+}
 
-	const newBlockData = await newBlockResponse.json();
-	appendBlocksResponse(newBlockData, blocksResponseEl);
-};
+// Llamar a la función con los datos de ejemplo
 
-commentForm.onsubmit = async function (event) {
-	event.preventDefault();
+//############################################################################################################
+// pageForm.onsubmit = async function (event) {
+// 	event.preventDefault();
 
-	const pageID = event.target.pageIDComment.value;
-	const comment = event.target.comment.value;
-	const body = JSON.stringify({ pageID, comment });
-	// Selecciona el elemento main y aplica la clase de transformación
+// 	const dbID = event.target.newPageDB.value;
+// 	const pageName = event.target.newPageName.value;
+// 	const header = event.target.header.value;
+// 	const body = JSON.stringify({ dbID, pageName, header });
+// 	//  const dueDate = event.target.dueDate.value
 
-	const newCommentResponse = await fetch("/comments", {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body,
-	});
+// 	const newPageResponse = await fetch("/pages", {
+// 		method: "POST",
+// 		headers: {
+// 			"Content-Type": "application/json",
+// 		},
+// 		body,
+// 	});
 
-	const newCommentData = await newCommentResponse.json();
-	appendApiResponse(newCommentData, commentResponseEl);
-};
+// 	const newPageData = await newPageResponse.json();
+// 	appendApiResponse(newPageData, pageResponseEl);
+// };
+
+// blocksForm.onsubmit = async function (event) {
+// 	event.preventDefault();
+
+// 	const pageID = event.target.pageID.value;
+// 	const content = event.target.content.value;
+// 	const body = JSON.stringify({ pageID, content });
+
+// 	const newBlockResponse = await fetch("/blocks", {
+// 		method: "POST",
+// 		headers: {
+// 			"Content-Type": "application/json",
+// 		},
+// 		body,
+// 	});
+
+// 	const newBlockData = await newBlockResponse.json();
+// 	appendBlocksResponse(newBlockData, blocksResponseEl);
+// };
+
+// commentForm.onsubmit = async function (event) {
+// 	event.preventDefault();
+
+// 	const pageID = event.target.pageIDComment.value;
+// 	const comment = event.target.comment.value;
+// 	const body = JSON.stringify({ pageID, comment });
+// 	// Selecciona el elemento main y aplica la clase de transformación
+
+// 	const newCommentResponse = await fetch("/comments", {
+// 		method: "POST",
+// 		headers: {
+// 			"Content-Type": "application/json",
+// 		},
+// 		body,
+// 	});
+
+// 	const newCommentData = await newCommentResponse.json();
+// 	appendApiResponse(newCommentData, commentResponseEl);
+// };

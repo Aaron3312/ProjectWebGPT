@@ -1,15 +1,15 @@
 [
   {
     "role": "system",
-    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 19-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: hazme un proyecto de 2 tareas para probar estolo que no sepas imaginalo o generalo!"
+    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 19-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: haz un proyecto de 3 tareas suma 2 + 2lo que no sepas imaginalo o generalo!"
   },
   {
     "role": "user",
-    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: hazme un proyecto de 2 tareas para probar esto"
+    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: haz un proyecto de 3 tareas suma 2 + 2"
   },
   {
     "role": "assistant",
-    "content": "Proyecto de Prueba de 2 Tareas"
+    "content": "Proyecto \"Operación Cuatro\""
   },
   {
     "role": "user",
@@ -17,7 +17,7 @@
   },
   {
     "role": "assistant",
-    "content": "2"
+    "content": "3"
   },
   {
     "role": "user",
@@ -25,15 +25,15 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea de Investigación"
+    "content": "Investigación preliminar"
   },
   {
     "role": "user",
-    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
+    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "Para llevar a cabo la tarea de Investigación, sigue estos pasos:\n\n1. Define claramente el objetivo de la investigación.\n2. Realiza una revisión bibliográfica y busca información relevante en fuentes confiables.\n3. Diseña un plan de trabajo que incluya los métodos de investigación a utilizar.\n4. Recolecta datos de manera organizada y sistemática.\n5. Analiza los datos recopilados y saca conclusiones basadas en la información obtenida.\n6. Prepara un informe detallado con los resultados de la investigación.\n7. Presenta los hallazgos de manera clara y concisa."
+    "content": "1. Definir el alcance de la investigación preliminar.\n2. Recopilar información relevante sobre el proyecto.\n3. Analizar y sintetizar los datos recopilados.\n4. Elaborar un informe con los hallazgos y conclusiones de la investigación preliminar.\n5. Presentar el informe a los interesados y obtener retroalimentación."
   },
   {
     "role": "user",
@@ -41,7 +41,7 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-26"
+    "content": "2024-05-20"
   },
   {
     "role": "user",
@@ -49,15 +49,15 @@
   },
   {
     "role": "assistant",
-    "content": "Presentación de Resultados"
+    "content": "Análisis de datos"
   },
   {
     "role": "user",
-    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "1. Organiza la información recopilada de manera clara y visualmente atractiva.\n2. Prepara una presentación impactante que muestre los resultados de manera ordenada y comprensible.\n3. Practica la presentación para asegurarte de transmitir los datos de forma efectiva.\n4. Establece un tiempo límite para cada sección de la presentación y practica la gestión del tiempo.\n5. Prepara materiales de apoyo, como gráficos o tablas, para enriquecer la presentación.\n6. Asegúrate de estar preparado para responder preguntas o ampliar sobre los resultados presentados."
+    "content": "1. Recolectar los datos necesarios para el análisis.\n2. Organizar y estructurar los datos de manera adecuada.\n3. Aplicar técnicas de análisis estadístico.\n4. Interpretar los resultados obtenidos.\n5. Elaborar un informe con las conclusiones del análisis de datos."
   },
   {
     "role": "user",
@@ -65,6 +65,30 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-27"
+    "content": "2024-05-22"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 3 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Presentación de resultados"
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 3 del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Preparar una visualización clara y efectiva de los resultados.\n2. Preparar una presentación oral para compartir los resultados.\n3. Revisar y practicar la presentación.\n4. Realizar la presentación ante los interesados.\n5. Responder preguntas y recopilar comentarios."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 3 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-24"
   }
 ]
