@@ -126,9 +126,9 @@ dbForm.onsubmit = async function (event) {
 		//escondemos el boton de esconder menu
 		$(".menuhide").hide();
 		//hacemos mas pequeño el menu de arriba
-		$(".upperPart").toggleClass("minimize");
+		//$(".upperPart").toggleClass("minimize");
 		//subimos un poco la tabla de abajo cambiando el margen-top -4rem
-		$("table").animate({"margin-top": "-10rem"});
+		//$("table").animate({"margin-top": "-10rem"});
 
 	}
 

@@ -122,7 +122,7 @@ app.post("/databases", async function (req, res) {
     response_T1 = await DBsd((readMessages()), "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero " + i + " del proyecto: " + name + "!" ); 
     response_dueDate = await DBsd((readMessages()), "Genera y dime la fecha de vencimiento de la tarea numero " + i + " del proyecto en formato AAAA-MM-DD!");
     var page1 = pageGenerator(response2, database_id, response_T1, response_dueDate);
-  }
+  } 
   console.log("fin de la creacion de la base de datos y las paginas de las tareas");
   database_id_whitout_dash = database_id.replace(/-/g, "");
   console.log("https://www.notion.so/" + database_id_whitout_dash);
