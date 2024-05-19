@@ -8,20 +8,30 @@ html{
   font-family: "Sedan SC", serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.upperPart {
-  transition: transform 0.5s ease-in-out;
   position: relative;
-  transform-origin: center;
+  z-index: 0;
 }
 
-.upperPart.minimize {
-  transform: translate(-30%, -30%) scale(0.7);
-  margin-left: 32rem;
-  margin-top: 5rem;
-  justify-self: center;
+html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/background2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.05; /* Define la opacidad aquí */ 
+  /*cambiamos el tono de la imagen de fondo */
+
+  z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
+  /*el contenido es interactivo */
+  pointer-events: none;
+  height: 47rem;
 }
+
+
 
 .Titles1s{
   display: flex;
@@ -58,9 +68,16 @@ body {
   color: #a48249;
   font-family: "Sedan SC", serif;
   font-weight: 400;
-  font-style: normal;  margin: 2em 1em;
+  font-style: normal;  margin: 3em 1em;
   line-height: 1.5em;
+
+  
 }
+
+
+
+
+
 
 h1 {
   color: #7171d1;
@@ -149,6 +166,12 @@ footer {
   margin: 100px auto;                  /* Centrado con margen vertical */
   box-shadow: 0 8px 16px rgba(81, 47, 3, 0.717); /* Sombra para resaltar */
   animation: pulse 1.5s infinite;      /* Animación definida a continuación */
+}
+/* hacemos el texto mas pequeño si la pantalla es menor de 800 px   */
+@media (max-width: 800px) {
+  .loading-text {
+    font-size: 1rem;
+  }
 }
 
 /* Animación que cambia la escala y la opacidad para dar un efecto pulsante */

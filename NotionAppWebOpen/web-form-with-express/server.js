@@ -6,6 +6,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const port = 443;
 const fs = require("fs/promises"); // Import fs/promises para manejar archivos de forma asíncrona
+const model1 = "gpt-3.5-turbo"; //modelo de openai a utilizar
+
 
 //manejo de la hora y fecha
 const { DateTime } = require("luxon");
@@ -110,7 +112,7 @@ app.post("/databases", async function (req, res) {
   response_T1 = await DBsd((readMessages()), "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: " + name + "!"); 
   response_dueDate = await DBsd((readMessages()), "Genera y dime la fecha de vencimiento de la tarea numero 1 del proyecto en formato AAAA-MM-DD!");
   var page1 = pageGenerator(response2, database_id, response_T1, response_dueDate);
-
+  
 
 
   //for (let i = 2; i <= NumberOfTasks; i++) {
@@ -264,7 +266,7 @@ async function DBsd(response1, prompts) { //funcion para generar el nombre de la
   messages.push({ role: "user", content: prompts + userQuestion
   }); // Agregar la nueva pregunta del usuario
   const completion = await openai.chat.completions.create({
-    model: "gpt-3.5-turbo",
+    model: model1,
     messages: messages,
   });
 

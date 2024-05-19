@@ -1,15 +1,15 @@
 [
   {
     "role": "system",
-    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 08-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: genera unicamente 2 tareas de prueba de concepto tuyolo que no sepas imaginalo o generalo!"
+    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 13-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: proyecto 2 tareaslo que no sepas imaginalo o generalo!"
   },
   {
     "role": "user",
-    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: genera unicamente 2 tareas de prueba de concepto tuyo"
+    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: proyecto 2 tareas"
   },
   {
     "role": "assistant",
-    "content": "\"Pruebas de concepto para proyecto de IA\""
+    "content": "Gestión de Tareas Eficiente"
   },
   {
     "role": "user",
@@ -17,7 +17,7 @@
   },
   {
     "role": "assistant",
-    "content": "2"
+    "content": "8"
   },
   {
     "role": "user",
@@ -25,15 +25,15 @@
   },
   {
     "role": "assistant",
-    "content": "Investigación de algoritmos de aprendizaje automático"
+    "content": "Crear lista de tareas."
   },
   {
     "role": "user",
-    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: genera unicamente 2 tareas de prueba de concepto tuyo![object Promise]"
+    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: proyecto 2 tareas![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "1. Investigar y estudiar los diferentes algoritmos de aprendizaje automático disponibles en la literatura académica y en la industria.\n2. Seleccionar los algoritmos más relevantes y adecuados para el proyecto en base a los objetivos y requerimientos establecidos."
+    "content": "1. Definir el formato de la lista de tareas (digital o física).\n2. Enumerar todas las tareas pendientes a realizar.\n3. Priorizar las tareas según su importancia y urgencia.\n4. Establecer fechas límite para cada tarea si es necesario.\n5. Asignar responsables a cada tarea si el proyecto es en equipo.\n6. Revisar y ajustar la lista de tareas según sea necesario.\n7. Comenzar a trabajar en la primera tarea de la lista."
   },
   {
     "role": "user",
@@ -41,7 +41,7 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-15"
+    "content": "2024-05-13"
   },
   {
     "role": "user",
@@ -49,15 +49,15 @@
   },
   {
     "role": "assistant",
-    "content": "Presentación de resultados"
+    "content": "Asignar recursos."
   },
   {
     "role": "user",
-    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: genera unicamente 2 tareas de prueba de concepto tuyo![object Promise]"
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: proyecto 2 tareas![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "1. Analizar y procesar los datos recopilados utilizando los algoritmos de aprendizaje automático seleccionados.\n2. Crear visualizaciones y presentaciones efectivas que muestren los resultados obtenidos a partir de la aplicación de los algoritmos."
+    "content": "1. Identificar los recursos necesarios para llevar a cabo las tareas del proyecto.\n2. Evaluar la disponibilidad de los recursos internos y externos.\n3. Asignar los recursos de manera eficiente a cada tarea según sus requerimientos.\n4. Establecer un plan de seguimiento para asegurar que los recursos asignados estén siendo utilizados de forma efectiva.\n5. Realizar ajustes en la asignación de recursos si es necesario para garantizar el avance del proyecto."
   },
   {
     "role": "user",
@@ -65,6 +65,150 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-22"
+    "content": "2024-05-14"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 3 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Establecer plazos."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 3 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Definir las fechas límite para cada una de las tareas restantes del proyecto.\n2. Considerar la complejidad y duración de cada tarea al establecer los plazos.\n3. Asegurarse de que los plazos sean realistas y alcanzables.\n4. Comunicar claramente los plazos establecidos a todo el equipo de trabajo.\n5. Monitorear y ajustar los plazos según sea necesario durante la ejecución del proyecto. \n\n"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 3 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-15"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 4 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Revisión de avances."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 4 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Programar reuniones periódicas para revisar el progreso del proyecto.\n2. Recopilar informes de avance de cada miembro del equipo.\n3. Analizar los resultados obtenidos hasta el momento.\n4. Identificar posibles desviaciones en el plan inicial y proponer soluciones.\n5. Comunicar los resultados de la revisión a todo el equipo y tomar acciones correctivas si es necesario."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 4 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-16"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 5 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Informe de progreso."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 5 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Recopilar la información relevante sobre el estado actual del proyecto.\n2. Analizar los avances realizados en relación con los objetivos y plazos establecidos.\n3. Identificar posibles problemas o desviaciones en el desarrollo del proyecto.\n4. Elaborar un informe detallado que incluya los logros, dificultades y próximos pasos a seguir.\n5. Presentar el informe de progreso al equipo de trabajo y a los responsables del proyecto."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 5 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-17"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 6 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Asignar responsabilidades."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 6 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Identificar las tareas restantes y los roles necesarios para completarlas.\n2. Asignar a cada miembro del equipo las responsabilidades específicas que le corresponden.\n3. Definir claramente las funciones y expectativas de cada responsable.\n4. Establecer canales de comunicación efectivos para coordinar el trabajo entre los miembros del equipo.\n5. Realizar un seguimiento constante para garantizar que las responsabilidades asignadas se cumplan en tiempo y forma."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 6 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-18"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 7 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Seguimiento de avances."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 7 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Revisar el estado actual de cada una de las tareas del proyecto.\n2. Comparar los avances realizados con el plan inicial.\n3. Identificar posibles retrasos o desviaciones en el cronograma.\n4. Analizar las causas de los posibles inconvenientes y buscar soluciones.\n5. Comunicar los hallazgos al equipo y tomar medidas correctivas si es necesario."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 7 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-19"
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 8 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "Informe final."
+  },
+  {
+    "role": "user",
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 8 del proyecto: proyecto 2 tareas![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "1. Recopilar los resultados finales de todas las tareas del proyecto.\n2. Evaluar el cumplimiento de los objetivos y metas establecidos.\n3. Preparar un informe detallado que incluya los logros alcanzados, lecciones aprendidas y posibles mejoras para futuros proyectos.\n4. Presentar el informe final a todas las partes interesadas del proyecto.\n5. Realizar una sesión de retroalimentación para analizar el desempeño del equipo y del proceso en su conjunto."
+  },
+  {
+    "role": "user",
+    "content": "Genera y dime la fecha de vencimiento de la tarea numero 8 del proyecto en formato AAAA-MM-DD![object Promise]"
+  },
+  {
+    "role": "assistant",
+    "content": "2024-05-20"
   }
 ]
