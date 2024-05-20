@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+const http = require('http');
+const https = require('https');
 const app = express();
 const OpenAI = require("openai");
 const bodyParser = require("body-parser");
@@ -32,8 +34,12 @@ const notion = new Client({ auth: process.env.NOTION_KEY });
 app.use(express.static("public")); //para que se pueda acceder a los archivos de la carpeta public
 app.use(express.json()); // for parsing application/json
 
+
+
+
+
 // http://expressjs.com/en/starter/basic-routing.html
-app.get("/", function (request, response) {
+app.get("/", function (request, response) { //ruta principal
 	response.sendFile(__dirname + "/views/index.html");
 });
 
@@ -42,6 +48,10 @@ app.post("/fd", async (req, res) => {
 	const name = req.body.name;
 	const response1 = await main(name);
 	res.json(response1);
+});
+
+http.createServer(app).listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
 
 // async function main(response1) {
