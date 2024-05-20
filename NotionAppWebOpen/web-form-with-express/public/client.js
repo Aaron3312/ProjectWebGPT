@@ -170,7 +170,15 @@ appendApiResponseToCronosUI = function (data) {
 	// Append project details to Cronos UI
 	// Crear contenedor principal
 
+
+
 	const container = document.getElementById("content-container");
+	container.style.width = "50%";
+	container.style.border = "1px solid #ccc";
+	container.style.padding = "10px";
+	container.style.margin = "10px";
+	container.style.borderRadius = "10px";
+	container.style.boxShadow = "0 0 10px rgba(0,0,0,0.1)";
 
 	// Crear título
 	const title = document.createElement("h2");
@@ -225,10 +233,11 @@ appendApiResponseToCronosUI = function (data) {
 	addIntercalatedElements(data.Steps, data.dateOfSteps, data.StepsInsideResume);
 
 	// Inicializar FullCalendar y añadir eventos
-	
+
 	const calendarEl = document.getElementById("calendar");
-		// necesitamos hacerlo un poco a la izq el calendario
-		//calendarEl.style.marginLeft = "-1rem";
+
+	// necesitamos hacerlo un poco a la izq el calendario
+	//calendarEl.style.marginLeft = "-1rem";
 	const calendar = new FullCalendar.Calendar(calendarEl, {
 		initialView: "dayGridMonth",
 		events: data.dateOfSteps.map((date, index) => ({
@@ -237,45 +246,49 @@ appendApiResponseToCronosUI = function (data) {
 			description: data.StepsInsideResume[index],
 		})),
 		headerToolbar: {
-			left: 'prev,next today',
-			center: 'title',
-			right: 'dayGridMonth,timeGridWeek,timeGridDay'
+			left: "prev,next today",
+			center: "title",
+			right: "dayGridMonth,timeGridWeek,timeGridDay",
 		},
-		eventClick: function(info) {
-			alert('Event: ' + info.event.title + '\nDescription: ' + info.event.extendedProps.description);
+		eventClick: function (info) {
+			alert(
+				"Event: " +
+					info.event.title +
+					"\nDescription: " +
+					info.event.extendedProps.description
+			);
 		},
-		dateClick: function(info) {
-			alert('Date: ' + info.dateStr);
+		dateClick: function (info) {
+			alert("Date: " + info.dateStr);
 		},
 		editable: true,
 		selectable: true,
-		select: function(info) {
-			alert('Selected: ' + info.startStr + ' to ' + info.endStr);
+		select: function (info) {
+			alert("Selected: " + info.startStr + " to " + info.endStr);
 		},
-		eventDrop: function(info) {
-			alert('Event dropped to ' + info.event.start.toISOString());
+		eventDrop: function (info) {
+			alert("Event dropped to " + info.event.start.toISOString());
 		},
-		eventResize: function(info) {
-			alert('Event resized to ' + info.event.end.toISOString());
+		eventResize: function (info) {
+			alert("Event resized to " + info.event.end.toISOString());
 		},
-		eventMouseEnter: function(info) {
-			info.el.style.backgroundColor = 'lightblue';
+		eventMouseEnter: function (info) {
+			info.el.style.backgroundColor = "lightblue";
 		},
-		eventMouseLeave: function(info) {
-			info.el.style.backgroundColor = '';
+		eventMouseLeave: function (info) {
+			info.el.style.backgroundColor = "";
 		},
-		eventRender: function(info) {
+		eventRender: function (info) {
 			var tooltip = new Tooltip(info.el, {
 				title: info.event.extendedProps.description,
-				placement: 'top',
-				trigger: 'hover',
-				container: 'body'
+				placement: "top",
+				trigger: "hover",
+				container: "body",
 			});
-		}
+		},
 	});
-	
+
 	calendar.render();
-	
 };
 
 // Agregar el contenedor principal al cuerpo del documento

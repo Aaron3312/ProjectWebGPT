@@ -1,15 +1,15 @@
 [
   {
     "role": "system",
-    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 19-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: haz un proyecto de 3 tareas suma 2 + 2lo que no sepas imaginalo o generalo!"
+    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 20-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: hazme un proyecto de 2 tareas para probar estolo que no sepas imaginalo o generalo!"
   },
   {
     "role": "user",
-    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: haz un proyecto de 3 tareas suma 2 + 2"
+    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: hazme un proyecto de 2 tareas para probar esto"
   },
   {
     "role": "assistant",
-    "content": "Proyecto \"Operación Matemática\""
+    "content": "Proyecto: prueba de tareas"
   },
   {
     "role": "user",
@@ -17,7 +17,7 @@
   },
   {
     "role": "assistant",
-    "content": "3"
+    "content": "2"
   },
   {
     "role": "user",
@@ -25,15 +25,15 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 1: Investigar métodos de suma."
+    "content": "Tarea 1: Investigación preliminar"
   },
   {
     "role": "user",
-    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
+    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "1. Investiga diferentes métodos de suma utilizados en matemáticas, como la suma manual, la suma en columnas, la suma usando calculadoras, entre otros.\n2. Compara la efectividad y eficiencia de cada método, teniendo en cuenta la precisión, rapidez y facilidad de uso.\n3. Selecciona el método de suma más adecuado para el propósito del proyecto y asegúrate de comprender completamente cómo aplicarlo en diversas situaciones."
+    "content": "Lo siento por la confusión anterior, aquí te muestro los pasos para realizar la primera tarea del proyecto \"prueba de tareas\":\n\n1. Realizar una investigación preliminar sobre el alcance y los objetivos del proyecto.\n   - Definir claramente el propósito y los resultados esperados de la prueba de tareas.\n   - Identificar los recursos necesarios para llevar a cabo la prueba de manera efectiva.\n   - Establecer un plan de acción detallado para la ejecución de la tarea.\n\nEspero que esta información sea de ayuda. ¡Avísame si necesitas más detalles o asistencia en este proyecto!"
   },
   {
     "role": "user",
@@ -41,7 +41,7 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-20"
+    "content": "2024-05-22"
   },
   {
     "role": "user",
@@ -49,15 +49,15 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 2: Crear presentación."
+    "content": "Tarea 2: Informe de resultados"
   },
   {
     "role": "user",
-    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
+    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "1. Diseñar la estructura de la presentación, definiendo la introducción, el desarrollo y la conclusión.\n2. Elaborar diapositivas claras y concisas que incluyan ejemplos de sumas utilizando el método seleccionado en la primera tarea.\n3. Revisar y ajustar el contenido de la presentación para asegurar que sea coherente, informativo y visualmente atractivo."
+    "content": "Lo siento, parece que hubo un problema con la respuesta anterior. Aquí te presento los pasos a seguir para completar la segunda tarea del proyecto \"prueba de tareas\":\n\n1. Recolectar y analizar los datos obtenidos durante la ejecución de la tarea 1.\n2. Organizar la información relevante de manera clara y concisa en un informe.\n3. Elaborar un resumen ejecutivo con los hallazgos principales y conclusiones.\n4. Revisar y editar el informe para garantizar precisión y coherencia en la presentación de los resultados.\n5. Presentar el informe de resultados ante el equipo o la persona encargada, según corresponda.\n\nEspero que estos pasos sean de utilidad para completar la segunda tarea con éxito. ¡Déjame saber si necesitas más detalles o ayuda adicional!\n"
   },
   {
     "role": "user",
@@ -65,30 +65,6 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-22"
-  },
-  {
-    "role": "user",
-    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 3 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "Tarea 3: Informe final."
-  },
-  {
-    "role": "user",
-    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 3 del proyecto: haz un proyecto de 3 tareas suma 2 + 2![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "1. Resumir los resultados obtenidos durante la investigación de métodos de suma y la creación de la presentación.\n2. Detallar las conclusiones sobre la eficacia de los métodos de suma y su aplicación en diferentes situaciones.\n3. Presentar el informe final de manera clara y organizada, destacando los puntos clave y recomendaciones para futuros proyectos similares."
-  },
-  {
-    "role": "user",
-    "content": "Genera y dime la fecha de vencimiento de la tarea numero 3 del proyecto en formato AAAA-MM-DD![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "2024-05-26"
+    "content": "2024-05-27"
   }
 ]

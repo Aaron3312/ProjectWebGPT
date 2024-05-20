@@ -92,20 +92,21 @@ table {
 
 
 
-.content-container {
-  width: 50%;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/*.content-container {
+width: 50%;
+border: 1px solid #ccc;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+*/
 
 .calendar-container {
-  width: 50%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+width: 50%;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .main-container {
@@ -229,7 +230,7 @@ footer {
     display: none;
   }
   .content-container {
-    width: 100%;
+    width: 100% !important;
     margin: 5px;
     padding: 5px;
   }
@@ -240,6 +241,7 @@ footer {
   .div2{
     flex-direction: column;
   }
+  
 }
 
 /* Animación que cambia la escala y la opacidad para dar un efecto pulsante */

@@ -50,9 +50,13 @@ app.post("/fd", async (req, res) => {
 	res.json(response1);
 });
 
-http.createServer(app).listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// http.createServer(app).listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });
+
+// http.createServer(app).listen(8080, () => {
+//   console.log(`Server is running on port ${8080}`);
+// });
 
 // async function main(response1) {
 // 	let userResponse = response1;
@@ -444,6 +448,12 @@ app.post("/comments", async function (request, response) {
 		response.json({ message: "error", error });
 	}
 });
+
+//que todos los reques te vayan a la 8080
+// app.listen(8080, () => {
+//   console.log(`Server is running on port 8080`);
+// });
+
 
 // listen for requests :)
 const listener = app.listen(port, function () {
