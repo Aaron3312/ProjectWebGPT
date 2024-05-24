@@ -1,15 +1,15 @@
 [
   {
     "role": "system",
-    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es 20-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: hazme un proyecto de 2 tareas para probar estolo que no sepas imaginalo o generalo!"
+    "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos, actividades, o cualquier cosa, en la agenda el dia de hoy es 24-05-2024 haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: haz un proyecto de 1 tarea suma 2 + 2lo que no sepas imaginalo o generalo!"
   },
   {
     "role": "user",
-    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: hazme un proyecto de 2 tareas para probar esto"
+    "content": "Genera y dime unica y exclusivamente el titulo del proyecto resumido sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el titulo del proyecto que te propongo acontinuacion: haz un proyecto de 1 tarea suma 2 + 2"
   },
   {
     "role": "assistant",
-    "content": "Proyecto: prueba de tareas"
+    "content": "Suma básica: 2 + 2"
   },
   {
     "role": "user",
@@ -17,7 +17,7 @@
   },
   {
     "role": "assistant",
-    "content": "2"
+    "content": "1"
   },
   {
     "role": "user",
@@ -25,15 +25,15 @@
   },
   {
     "role": "assistant",
-    "content": "Tarea 1: Investigación preliminar"
+    "content": "Sumar 2 + 2."
   },
   {
     "role": "user",
-    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
+    "content": "Genera o imagina o investiga, pero hazlo! y dime los pasos a seguir para hacer la primer tarea del proyecto: haz un proyecto de 1 tarea suma 2 + 2![object Promise]"
   },
   {
     "role": "assistant",
-    "content": "Lo siento por la confusión anterior, aquí te muestro los pasos para realizar la primera tarea del proyecto \"prueba de tareas\":\n\n1. Realizar una investigación preliminar sobre el alcance y los objetivos del proyecto.\n   - Definir claramente el propósito y los resultados esperados de la prueba de tareas.\n   - Identificar los recursos necesarios para llevar a cabo la prueba de manera efectiva.\n   - Establecer un plan de acción detallado para la ejecución de la tarea.\n\nEspero que esta información sea de ayuda. ¡Avísame si necesitas más detalles o asistencia en este proyecto!"
+    "content": "1. Identificar los dos números a sumar: 2 y 2.\n2. Realizar la operación matemática: 2 + 2.\n3. Obtener el resultado de la suma."
   },
   {
     "role": "user",
@@ -41,30 +41,6 @@
   },
   {
     "role": "assistant",
-    "content": "2024-05-22"
-  },
-  {
-    "role": "user",
-    "content": "Genera y dime unica y exclusivamente el nombre de la tarea numero 2 sin otras cosas ni nada de contexto extra o preguntas, UNICAMENTE el nombre de la tarea para llevar a cabo ese proyecto y sin verbos como realizar o hacer![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "Tarea 2: Informe de resultados"
-  },
-  {
-    "role": "user",
-    "content": "Genera o imagina para que me digas los pasos a seguir para hacer la tarea numero 2 del proyecto: hazme un proyecto de 2 tareas para probar esto![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "Lo siento, parece que hubo un problema con la respuesta anterior. Aquí te presento los pasos a seguir para completar la segunda tarea del proyecto \"prueba de tareas\":\n\n1. Recolectar y analizar los datos obtenidos durante la ejecución de la tarea 1.\n2. Organizar la información relevante de manera clara y concisa en un informe.\n3. Elaborar un resumen ejecutivo con los hallazgos principales y conclusiones.\n4. Revisar y editar el informe para garantizar precisión y coherencia en la presentación de los resultados.\n5. Presentar el informe de resultados ante el equipo o la persona encargada, según corresponda.\n\nEspero que estos pasos sean de utilidad para completar la segunda tarea con éxito. ¡Déjame saber si necesitas más detalles o ayuda adicional!\n"
-  },
-  {
-    "role": "user",
-    "content": "Genera y dime la fecha de vencimiento de la tarea numero 2 del proyecto en formato AAAA-MM-DD![object Promise]"
-  },
-  {
-    "role": "assistant",
-    "content": "2024-05-27"
+    "content": "2024-05-24"
   }
 ]

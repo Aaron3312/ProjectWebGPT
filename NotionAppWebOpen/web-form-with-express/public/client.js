@@ -152,7 +152,8 @@ dbForm.onsubmit = async function (event) {
 	//projectDetails have this things inside:DatabaseName: [],NumberOfTasks: [],Steps: [],dateOfSteps: [],completionOfSteps: [],StepsInsideResume: []
 
 	console.log("this is the response of the api: ");
-	console.log(newDBData.projectDetails);
+	console.log(newDBResponse);
+	console.log(newDBData);
 	//console.log(newDBData.projectDetails.DatabaseName)
 	//mostramos el nombre de la tarea step 2
 	//recuerda Step con mayuscula

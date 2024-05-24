@@ -6,7 +6,7 @@ const app = express();
 const OpenAI = require("openai");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const port = 443;
+const port = 80;
 const fs = require("fs/promises"); // Import fs/promises para manejar archivos de forma asíncrona
 const model1 = "gpt-3.5-turbo"; //modelo de openai a utilizar
 const fullCalendar = require('fullcalendar');
@@ -111,7 +111,7 @@ app.post("/databases", async function (req, res) {
   let messages = [
     {
       "role": "system",
-      "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos en la agenda el dia de hoy es " + time1 + " haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: " + name + "lo que no sepas imaginalo o generalo!"
+      "content": "eres un asistente que planifica y acomoda eventos o gestiona proyectos, actividades, o cualquier cosa, en la agenda el dia de hoy es " + time1 + " haz todo para que dure 1 semana a no ser que se te indique lo contrario y da lo que se te solicite sobre el contexto para el siguiente proyecto: " + name + "lo que no sepas imaginalo o generalo!"
     }
   ];
   await writeMessages(messages);
@@ -211,6 +211,8 @@ const sortedRows = async (database_id) => {
 	});
   return response;
 }
+
+
 
 async function sorts1(database_id1) {
   const response = await notion.databases.query({
