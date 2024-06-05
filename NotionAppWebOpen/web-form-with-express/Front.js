@@ -1,14 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-const http = require('http');
-const https = require('https');
 const app = express();
-const OpenAI = require("openai");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const port = 443;
 const fs = require("fs/promises"); // Import fs/promises para manejar archivos de forma asíncrona
-const model1 = "gpt-3.5-turbo"; //modelo de openai a utilizar
 const fullCalendar = require('fullcalendar');
 const ejs = require('ejs');
 const axios = require('axios');
@@ -20,9 +16,7 @@ const { DateTime } = require("luxon");
 app.use(cors());
 app.use(bodyParser.json());
 
-const openai = new OpenAI({
-	apiKey: process.env.OPENAI_API_KEY,
-});
+
 
 //manejo de la respuesta del asistente
 let response = "";
